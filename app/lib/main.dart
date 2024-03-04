@@ -1,3 +1,4 @@
+import 'package:app/screens/login_screen.dart';
 import 'package:app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'EsKlarheitGrotesk',
         textTheme: const TextTheme(
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
           bodyMedium: TextStyle(),
         ).apply(bodyColor: Colors.white),
       ),
-      home: const WelcomeScreen(),
+      home: const LoginScreen(),
     );
   }
 }

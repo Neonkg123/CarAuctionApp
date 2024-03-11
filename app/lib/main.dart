@@ -1,3 +1,4 @@
+import 'package:app/screens/discover_cars.dart';
 import 'package:app/screens/login_screen.dart';
 import 'package:app/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
           bodyMedium: TextStyle(),
         ).apply(bodyColor: Colors.white),
       ),
-      home: const LoginScreen(),
+      home: const DiscoverScreen(),
     );
   }
 }

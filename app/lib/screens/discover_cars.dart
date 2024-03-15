@@ -741,23 +741,13 @@ class DiscoverScreen extends StatelessWidget {
                   height: 75.0,
                   child: Stack(
                     children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: const Color.fromRGBO(0, 0, 0, 1),
-                          image: const DecorationImage(
-                            image: AssetImage('assets/images/Mask group.png'),
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      ),
                       SizedBox(
-                        width: 75,
-                        height: 75,
+                        width: double.maxFinite,
+                        height: double.maxFinite,
                         child: FloatingActionButton(
                           elevation: 0,
                           onPressed: (null),
-                          backgroundColor: Colors.transparent,
+                          backgroundColor: const Color.fromRGBO(0, 0, 0, 1),
                           mini: false,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50),
@@ -765,6 +755,15 @@ class DiscoverScreen extends StatelessWidget {
                           child: const Icon(
                             Icons.add,
                             color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          image: const DecorationImage(
+                            image: AssetImage('assets/images/Mask group.png'),
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),

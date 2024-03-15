@@ -2,6 +2,7 @@ import 'package:app/widgets/ferrari_card.dart';
 import 'package:app/widgets/lambo_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
@@ -729,6 +730,47 @@ class DiscoverScreen extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(24),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: SizedBox(
+                  width: 75.0,
+                  height: 75.0,
+                  child: Stack(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: const Color.fromRGBO(0, 0, 0, 1),
+                          image: const DecorationImage(
+                            image: AssetImage('assets/images/Mask group.png'),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 75,
+                        height: 75,
+                        child: FloatingActionButton(
+                          elevation: 0,
+                          onPressed: (null),
+                          backgroundColor: Colors.transparent,
+                          mini: false,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          child: const Icon(
+                            Icons.add,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ],

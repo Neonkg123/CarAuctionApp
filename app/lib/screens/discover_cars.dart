@@ -1,10 +1,6 @@
 import 'package:app/widgets/ferrari_card.dart';
 import 'package:app/widgets/lambo_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 
 class DiscoverScreen extends StatelessWidget {
   const DiscoverScreen({super.key});

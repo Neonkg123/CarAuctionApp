@@ -69,6 +69,8 @@ flutter:
         - assets/images/PngItem_6493755 1.png
         - assets/images/audi-rs6-avant-2020-side-view-1 1 (1).png
         - assets/images/Mask group.png
+        - assets/images/audi-rs6-avant-2020-front-side-view.png
+        - assets/images/Rectangle 64.png
 
     # An image asset can refer to one or more resolution-specific "variants", see
     # https://flutter.dev/assets-and-images/#resolution-aware
